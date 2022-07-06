@@ -33,7 +33,7 @@ int main ()
     		codigoMatriz[i]=i;
     		
 			printf("---------Insira os dados---------\n");
-			printf("Código do cliente: %d\n", codigoMatriz[i]);
+			printf("CÃ³digo do cliente: %d\n", codigoMatriz[i]);
     		printf("Nome: ");
     		fgets(nome[i], 100, stdin);
     		tamanho=strlen(nome[i]);
@@ -50,7 +50,7 @@ int main ()
     			fputc(CEP[i][n], pont_cad);    
     		}
     		
-    		printf("Endereço: ");
+    		printf("EndereÃ§o: ");
     		fgets(endereco[i], 100, stdin);
     		tamanho=strlen(endereco[i]);
     		for(n=0; n<tamanho; n++)
@@ -106,7 +106,7 @@ int main ()
 			printf("| 1- Cadastros recentes                        |\n");
 			printf("| 2- Todos cadastros                           |\n");
 			printf("*------------======================------------*\n");
-			printf("Opção: ");
+			printf("OpÃ§Ã£o: ");
 			scanf("%d", &Econsulta);
 			if(Econsulta==1)
 			{
@@ -114,10 +114,10 @@ int main ()
     		
     		if (codigoMatriz[i]!=0)
 			{
-				printf("Código do cliente: %d\n", codigoMatriz[i]);
+				printf("CÃ³digo do cliente: %d\n", codigoMatriz[i]);
 				printf("Nome: %s", nome[i]);
     			printf("CEP: %s", CEP[i]);
-    			printf("Endereço: %s", endereco[i]);
+    			printf("EndereÃ§o: %s", endereco[i]);
     			printf("Bairro: %s", bairro[i]);
     			printf("Cidade: %s", cidade[i]);
     			printf("Estado: %s", estado[i]);
@@ -126,7 +126,7 @@ int main ()
 			}
 			else
 			{
-				printf("Código de cliente inválido!");
+				printf("CÃ³digo de cliente invÃ¡lido!");
 			}
 			}
 			if(Econsulta==2)
@@ -143,7 +143,7 @@ int main ()
 			}
 			if(Econsulta!=1 && Econsulta!=2)
 			{
-				printf("Erro! Tente novamente escolhendo o número 1 ou 2.");
+				printf("Erro! Tente novamente escolhendo o nÃºmero 1 ou 2.");
 			}
     		break;
     	case 3:
@@ -154,14 +154,14 @@ int main ()
 				printf("*-------O que deseja alterar-------*\n");
     			printf("|  1- Nome                         |\n");
     			printf("|  2- CEP                          |\n");
-    			printf("|  3- Endereço                     |\n");
+    			printf("|  3- EndereÃ§o                     |\n");
     			printf("|  4- Bairro                       |\n");
     			printf("|  5- Cidade                       |\n");
     			printf("|  6- Estado                       |\n");
     			printf("|  7- Telefone                     |\n");
     			printf("|  8- E-mail                       |\n");
     			printf("*-------====================-------*\n ");
-    			printf("\nOpção: ");
+    			printf("\nOpÃ§Ã£o: ");
 				scanf("%d", &alt);
 				fflush(stdin);
     		
@@ -170,50 +170,50 @@ int main ()
    					case 1:
 						printf("Digite o novo nome: ");
    						fgets(nome[i], 100, stdin);
-   						printf("Alteração concluida com sucesso!\n");
+   						printf("AlteraÃ§Ã£o concluida com sucesso!\n");
     					break;
    					case 2:
 						printf("Digite o novo CEP: ");
    						fgets(CEP[i], 100, stdin);
-   						printf("Alteração concluida com sucesso!\n");
+   						printf("AlteraÃ§Ã£o concluida com sucesso!\n");
     					break;
    					case 3:
-						printf("Digite o novo endereço: ");
+						printf("Digite o novo endereÃ§o: ");
    						fgets(endereco[i], 100, stdin);
-   						printf("Alteração concluida com sucesso!\n");
+   						printf("AlteraÃ§Ã£o concluida com sucesso!\n");
     					break;
    					case 4:
 						printf("Digite o novo bairro: ");
    						fgets(bairro[i], 100, stdin);
-   						printf("Alteração concluida com sucesso!\n");
+   						printf("AlteraÃ§Ã£o concluida com sucesso!\n");
     					break;
     				case 5:
 						printf("Digite a nova cidade: ");
     					fgets(cidade[i], 100, stdin);
-    					printf("Alteração concluida com sucesso!\n");
+    					printf("AlteraÃ§Ã£o concluida com sucesso!\n");
     					break;
     				case 6:
 						printf("Digite o novo estado: ");
     					fgets(estado[i], 100, stdin);
-    					printf("Alteração concluida com sucesso!\n");
+    					printf("AlteraÃ§Ã£o concluida com sucesso!\n");
 						break;
     				case 7:
 						printf("Digite o novo telefone: ");
     					fgets(telefone[i], 100, stdin);
-    					printf("Alteração concluida com sucesso!\n");
+    					printf("AlteraÃ§Ã£o concluida com sucesso!\n");
 						break;
     				case 8:
 						printf("Digite o novo e-mail: ");
     					fgets(email[i], 100, stdin);
-   		 				printf("Alteração concluida com sucesso!\n");
+   		 				printf("AlteraÃ§Ã£o concluida com sucesso!\n");
 						break;
     				default:
-    					printf("Opção inválida! Digite um número de 1 a 9.");	
+    					printf("OpÃ§Ã£o invÃ¡lida! Digite um nÃºmero de 1 a 9.");	
 				}
 			}
 			else
 			{
-				printf("Código de cliente inválido!");
+				printf("CÃ³digo de cliente invÃ¡lido!");
 			}
 			break;
     	case 4:
@@ -225,14 +225,14 @@ int main ()
     			printf("|  1- Cliente                      |\n");
     			printf("|  2- Nome                         |\n");
     			printf("|  3- CEP                          |\n");
-    			printf("|  4- Endereço                     |\n");
+    			printf("|  4- EndereÃ§o                     |\n");
     			printf("|  5- Bairro                       |\n");
     			printf("|  6- Cidade                       |\n");
     			printf("|  7- Estado                       |\n");
     			printf("|  8- Telefone                     |\n");
     			printf("|  9- E-mail                       |\n");
     			printf("*-------====================-------*\n ");
-    			printf("\nOpção: ");
+    			printf("\nOpÃ§Ã£o: ");
 				scanf("%d", &exc);
     			fflush(stdin);
     		
@@ -255,7 +255,7 @@ int main ()
 						}
 						else
 						{
-							printf("Exclusão não confirmada, tente novamente.");
+							printf("ExclusÃ£o nÃ£o confirmada, tente novamente.");
 						}
 						break;
    					case 2:
@@ -268,7 +268,7 @@ int main ()
 						}
 						else
 						{
-							printf("Exclusão não confirmada, tente novamente.");
+							printf("ExclusÃ£o nÃ£o confirmada, tente novamente.");
 						}
 						break;
    					case 3:
@@ -281,7 +281,7 @@ int main ()
 						}
 						else
 						{
-							printf("Exclusão não confirmada, tente novamente.");
+							printf("ExclusÃ£o nÃ£o confirmada, tente novamente.");
 						}
     					break;
    					case 4:
@@ -294,7 +294,7 @@ int main ()
 						}
 						else
 						{
-							printf("Exclusão não confirmada, tente novamente.");
+							printf("ExclusÃ£o nÃ£o confirmada, tente novamente.");
 						}
     					break;
    					case 5:
@@ -307,7 +307,7 @@ int main ()
 						}
 						else
 						{
-							printf("Exclusão não confirmada, tente novamente.");
+							printf("ExclusÃ£o nÃ£o confirmada, tente novamente.");
 						}
     					break;
 	    			case 6:
@@ -320,7 +320,7 @@ int main ()
 						}
 						else
 						{
-							printf("Exclusão não confirmada, tente novamente.");
+							printf("ExclusÃ£o nÃ£o confirmada, tente novamente.");
 						}
     					break;
    		 			case 7:
@@ -333,7 +333,7 @@ int main ()
 						}
 						else
 						{
-							printf("Exclusão não confirmada, tente novamente.");
+							printf("ExclusÃ£o nÃ£o confirmada, tente novamente.");
 						}
 						break;
     				case 8:
@@ -346,7 +346,7 @@ int main ()
 						}
 						else
 						{
-							printf("Exclusão não confirmada, tente novamente.");
+							printf("ExclusÃ£o nÃ£o confirmada, tente novamente.");
 						}
 						break;
     				case 9:
@@ -359,20 +359,20 @@ int main ()
 						}
 						else
 						{
-							printf("Exclusão não confirmada, tente novamente.");
+							printf("ExclusÃ£o nÃ£o confirmada, tente novamente.");
 						}
 						break;
     				default:
-    					printf("Opção inválida! Digite um número de 1 a 9.");
+    					printf("OpÃ§Ã£o invÃ¡lida! Digite um nÃºmero de 1 a 9.");
 				}
 			}
 			else
 			{
-				printf("Código de cliente inválido!");
+				printf("CÃ³digo de cliente invÃ¡lido!");
 			}
     		break;
     	default:
-    		printf("Opção inválida! Digite um número de 1 a 5.");	
+    		printf("OpÃ§Ã£o invÃ¡lida! Digite um nÃºmero de 1 a 5.");	
 	}
 	printf("\n\n");
 	op = menu();
@@ -392,7 +392,7 @@ int menu ()
 	printf ("|  4- Excluir                    |\n");
 	printf ("|  5- Sair                       |\n");
 	printf ("*-----======================-----*\n\n");
-	printf ("Opção: ");
+	printf ("OpÃ§Ã£o: ");
 	scanf("%d", &op);
 	fflush(stdin);
 	system("cls");
@@ -409,7 +409,7 @@ void contagem_cadastro ()
 
 void cliente ()
 {
-	printf("Digite o código do cliente: ");
+	printf("Digite o cÃ³digo do cliente: ");
     scanf("%d", &i);
     system("cls");
 }
